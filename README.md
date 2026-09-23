@@ -1,73 +1,96 @@
-# KarigarSethu
+<div align="center">
+  <img src="assets/logo_padded.jpeg" alt="KarigarSethu Logo" width="120" />
+  <h1>KarigarSethu</h1>
+  <p><strong>AI Virtual Business Manager for Artisans</strong></p>
+  <p><em>Smart India Hackathon 2026 Submission</em></p>
+</div>
 
-KarigarSethu is a modern, feature-rich Flutter application designed to bridge the gap between artisans (Karigars) and the digital marketplace. It empowers creators by providing advanced AI-driven tools to showcase their products beautifully.
+---
 
-## ✨ Features
+## 🎯 The Problem
 
-*   **AI-Powered Image Enhancement:** Seamlessly remove backgrounds and edit product photos using on-device ML (Google ML Kit) and `background_remover`.
-*   **Generative AI Integration:** Uses Google Generative AI & Groq to help generate product descriptions, improving the product's market appeal.
-*   **Advanced Image Editing:** Crop, adjust, and refine images using `pro_image_editor` and `image_cropper`.
-*   **Localization (i18n):** Fully localized supporting multiple languages (including Telugu) out of the box using Flutter's official localization system.
-*   **Beautiful UI:** Styled with `google_fonts`, custom typography, and responsive modern layouts.
+Millions of highly skilled local artisans (Karigars) in India struggle to enter the digital marketplace. They face a massive digital divide consisting of language barriers, lack of digital cataloging skills, and difficulty in competitive pricing. As a result, they remain reliant on middlemen, heavily reducing their profit margins.
 
-## 📸 Screenshots
+## 💡 Our Solution: KarigarSethu
+
+KarigarSethu is a mobile-first, AI-powered **Virtual Business Manager** tailored specifically for Indian artisans. It acts as a bridge ("Sethu") between traditional craftsmanship and modern e-commerce. By simply using their smartphone and speaking in their native language, a Karigar can instantly create professional-grade, SEO-optimized product listings ready for global marketplaces or direct-to-consumer sales.
+
+---
+
+## ✨ Key Innovation & Features
+
+*   **🗣️ Voice-to-Catalog (Hyper-Localized):** Artisans simply describe their product verbally in their local language (e.g., Telugu, Hindi, Marathi). We utilize **Groq's Whisper API** for ultra-fast, dialect-aware native speech recognition.
+*   **📸 AI Image Studio (Zero-Cost Professional Photos):** No need for expensive photoshoots. Using **Google ML Kit** and on-device processing, KarigarSethu automatically removes messy backgrounds and formats images perfectly for e-commerce.
+*   **🧠 Generative AI Auto-Cataloger:** We leverage **Google Gemini & Groq LLMs** to instantly translate local voice inputs into rich, SEO-friendly English product descriptions and automatically extract key attributes (material, dimensions, care instructions).
+*   **💰 Dynamic AI Pricing Assistant:** Helps artisans price their goods fairly and competitively. By analyzing input costs (raw material, labor) against real-time market contexts, our LLM engine suggests an optimal selling price.
+*   **🌐 GeM-Ready Architecture:** Designed with B2B marketplace integrations in mind, enabling artisans to easily tap into government procurement and bulk buyer channels.
+
+---
+
+## 📸 Prototype Gallery
+
+*(Over 40% of the prototype is completed and fully functional as demonstrated below)*
 
 <p align="center">
   <img src="assets/login.jpeg" width="22%" />
   <img src="assets/select_language.jpeg" width="22%" />
   <img src="assets/dashboard.jpeg" width="22%" />
   <img src="assets/add_product.jpeg" width="22%" />
+</p>
+<p align="center">
   <img src="assets/audio_to_description.jpeg" width="22%" />
   <img src="assets/add_features.jpeg" width="22%" />
   <img src="assets/base_price.jpeg" width="22%" />
 </p>
 
+---
 
-## 🚀 Getting Started
+## 🏗️ Technical Architecture & Process Flow
+
+<p align="center">
+  <img src="assets/architecture-diagram-updated.png" alt="Architecture Diagram" width="90%" />
+</p>
+
+### 🛠 Tech Stack
+*   **Frontend Mobile App:** Flutter (Cross-platform)
+*   **Backend & APIs:** Python + FastAPI *(Planned)*
+*   **Database & Auth:** PostgreSQL / Supabase
+*   **AI Integration:** Groq API (LLM & Whisper), Google Generative AI (Gemini)
+*   **Image Processing:** OpenCV, `rembg`, `pro_image_editor`, Google ML Kit Subject Segmentation
+
+---
+
+## 🚀 Judge's Evaluation / Local Setup Guide
+
+If you'd like to build and run the application locally to evaluate the prototype:
 
 ### Prerequisites
-*   Flutter SDK (v3.13.3 or higher)
-*   Dart SDK
-*   An Android / iOS device or emulator for testing
+*   Flutter SDK (^3.13.3)
+*   An Android or iOS Emulator / Physical Device
 
-### Installation
-
+### Setup Steps
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/svvishva/KarigarSethu.git
     cd KarigarSethu
     ```
-
 2.  **Install dependencies:**
     ```bash
     flutter pub get
     ```
-
 3.  **Environment Variables:**
-    Create a `.env` file in the root of the project to store your API keys:
+    Create a `.env` file in the root of the project to test the AI integration.
+    *(Note: To test the app, you will need to supply your own API keys for the LLMs)*
     ```env
-    # Example .env file
     GEMINI_API_KEY=your_gemini_key_here
     GROQ_API_KEY=your_groq_key_here
     ```
-
 4.  **Run the application:**
     ```bash
     flutter run
     ```
 
-## 🛠 Tech Stack & Packages
-
-*   **Framework:** [Flutter](https://flutter.dev/)
-*   **AI & ML:** `google_generative_ai`, `google_mlkit_subject_segmentation`
-*   **Image Processing:** `pro_image_editor`, `image_cropper`, `background_remover`
-*   **State & Storage:** `shared_preferences`
-*   **Media & Permissions:** `image_picker`, `record`, `permission_handler`
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/svvishva/KarigarSethu/issues).
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+---
+<div align="center">
+  <strong>Built with ❤️ for the artisans of India.</strong>
+</div>
