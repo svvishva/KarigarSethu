@@ -55,7 +55,7 @@ KarigarSethu is a mobile-first, AI-powered **Virtual Business Manager** tailored
 *   **Frontend Mobile App:** Flutter (Cross-platform)
 *   **Backend & APIs:** Python + FastAPI *(Planned)*
 *   **Database & Auth:** PostgreSQL / Supabase
-*   **AI Integration:** Groq API (LLM & Whisper), Google Generative AI (Gemini)
+*   **AI Integration:** Groq API (LLM & Whisper)
 *   **Image Processing:** OpenCV, `rembg`, `pro_image_editor`, Google ML Kit Subject Segmentation
 
 ---
@@ -82,7 +82,7 @@ If you'd like to build and run the application locally to evaluate the prototype
     Create a `.env` file in the root of the project to test the AI integration.
     *(Note: To test the app, you will need to supply your own API keys for the LLMs)*
     ```env
-    GEMINI_API_KEY=your_gemini_key_here
+
     GROQ_API_KEY=your_groq_key_here
     ```
 4.  **Run the application:**
