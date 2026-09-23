@@ -13,10 +13,13 @@ KarigarSethu is a modern, feature-rich Flutter application designed to bridge th
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="assets/screenshots/add_product_desc.jpg" width="22%" />
-  <img src="assets/screenshots/select_language.jpg" width="22%" />
-  <img src="assets/screenshots/ai_pricing.jpg" width="22%" />
-  <img src="assets/screenshots/login.jpg" width="22%" />
+  <img src="assets/login.jpeg" width="22%" />
+  <img src="assets/select_language.jpeg" width="22%" />
+  <img src="assets/dashboard.jpeg" width="22%" />
+  <img src="assets/add_product.jpeg" width="22%" />
+  <img src="assets/audio_to_description.jpeg" width="22%" />
+  <img src="assets/add_features.jpeg" width="22%" />
+  <img src="assets/base_price.jpeg" width="22%" />
 </p>
 
 
