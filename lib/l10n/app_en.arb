@@ -56,5 +56,18 @@
   "waitingForTranscription": "Waiting for transcription...",
   "transcribingAudio": "Transcribing audio...",
   "failedToCalculatePrice": "Failed to calculate AI price. Please try again or check your internet connection.",
-  "errorGenerating": "Error generating:"
+  "errorGenerating": "Error generating:",
+  "catHandloomSarees": "Handloom Sarees",
+  "catEthnicWear": "Ethnic Wear & Dresses",
+  "catHandwovenTextiles": "Handwoven Textiles",
+  "catWoodenHandicrafts": "Wooden Handicrafts",
+  "catBrassMetalware": "Brass & Bronze Metalware",
+  "catTerracotta": "Terracotta & Pottery",
+  "catLeatherCrafts": "Leather Crafts",
+  "catFootwear": "Footwear",
+  "catJewelry": "Handmade Jewelry",
+  "catPaintings": "Traditional Paintings",
+  "catBamboo": "Bamboo & Cane Products",
+  "catHomeDecor": "Home Decor",
+  "catOther": "Other"
 }

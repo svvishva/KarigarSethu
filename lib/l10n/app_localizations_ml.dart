@@ -186,4 +186,43 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get errorGenerating => 'പിശക്:';
+
+  @override
+  String get catHandloomSarees => 'കൈത്തറി സാരികൾ';
+
+  @override
+  String get catEthnicWear => 'പരമ്പരാഗത വസ്ത്രങ്ങൾ';
+
+  @override
+  String get catHandwovenTextiles => 'കൈത്തറി തുണിത്തരങ്ങൾ';
+
+  @override
+  String get catWoodenHandicrafts => 'മരപ്പണികൾ';
+
+  @override
+  String get catBrassMetalware => 'ഓട്, പിച്ചള പാത്രങ്ങൾ';
+
+  @override
+  String get catTerracotta => 'മൺപാത്രങ്ങൾ';
+
+  @override
+  String get catLeatherCrafts => 'തുകൽ കരകൗശലവസ്തുക്കൾ';
+
+  @override
+  String get catFootwear => 'ചെരിപ്പുകൾ';
+
+  @override
+  String get catJewelry => 'കൈകൊണ്ട് നിർമ്മിച്ച ആഭരണങ്ങൾ';
+
+  @override
+  String get catPaintings => 'പരമ്പരാഗത ചിത്രങ്ങൾ';
+
+  @override
+  String get catBamboo => 'മുള, ചൂരൽ ഉൽപ്പന്നങ്ങൾ';
+
+  @override
+  String get catHomeDecor => 'ഗൃഹാലങ്കാരം';
+
+  @override
+  String get catOther => 'മറ്റുള്ളവ';
 }

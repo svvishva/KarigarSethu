@@ -725,6 +725,26 @@ class _AddProductScreenState extends State<AddProductScreen> {
     );
   }
 
+  String _getLocalizedCategory(String category, AppLocalizations? l10n) {
+    if (l10n == null) return category;
+    switch (category) {
+      case 'Handloom Sarees': return l10n.catHandloomSarees;
+      case 'Ethnic Wear & Dresses': return l10n.catEthnicWear;
+      case 'Handwoven Textiles': return l10n.catHandwovenTextiles;
+      case 'Wooden Handicrafts': return l10n.catWoodenHandicrafts;
+      case 'Brass & Bronze Metalware': return l10n.catBrassMetalware;
+      case 'Terracotta & Pottery': return l10n.catTerracotta;
+      case 'Leather Crafts': return l10n.catLeatherCrafts;
+      case 'Footwear': return l10n.catFootwear;
+      case 'Handmade Jewelry': return l10n.catJewelry;
+      case 'Traditional Paintings': return l10n.catPaintings;
+      case 'Bamboo & Cane Products': return l10n.catBamboo;
+      case 'Home Decor': return l10n.catHomeDecor;
+      case 'Other': return l10n.catOther;
+      default: return category;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -875,7 +895,7 @@ class _AddProductScreenState extends State<AddProductScreen> {
                         borderRadius: BorderRadius.circular(24.0),
                         value: _selectedCategory,
                         hint: Text(
-                          'Select Product Type',
+                          l10n?.productCategory ?? 'Select Product Type',
                           style: TextStyle(
                             color: isDark ? Colors.white70 : AppTheme.textDark.withValues(alpha: 0.6),
                           ),
@@ -887,7 +907,7 @@ class _AddProductScreenState extends State<AddProductScreen> {
                           return DropdownMenuItem<String>(
                             value: category,
                             child: Text(
-                              category,
+                              _getLocalizedCategory(category, l10n),
                               style: TextStyle(
                                 color: isDark ? Colors.white : AppTheme.textDark,
                               ),

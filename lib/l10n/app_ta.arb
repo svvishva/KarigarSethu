@@ -56,5 +56,18 @@
   "waitingForTranscription": "எழுத்துமாற்றத்திற்காக காத்திருக்கிறது...",
   "transcribingAudio": "ஆடியோ எழுத்துமாற்றம் செய்யப்படுகிறது...",
   "failedToCalculatePrice": "AI விலையை கணக்கிட முடியவில்லை. இணைய இணைப்பை சரிபார்க்கவும்.",
-  "errorGenerating": "பிழை:"
+  "errorGenerating": "பிழை:",
+  "catHandloomSarees": "கைத்தறி புடவைகள்",
+  "catEthnicWear": "பாரம்பரிய உடைகள்",
+  "catHandwovenTextiles": "கைத்தறி துணிகள்",
+  "catWoodenHandicrafts": "மர கைவினைப்பொருட்கள்",
+  "catBrassMetalware": "பித்தளை மற்றும் வெண்கல பொருட்கள்",
+  "catTerracotta": "சுடுமண் மற்றும் மட்பாண்டங்கள்",
+  "catLeatherCrafts": "தோல் கைவினைப்பொருட்கள்",
+  "catFootwear": "காலணிகள்",
+  "catJewelry": "கையால் செய்யப்பட்ட நகைகள்",
+  "catPaintings": "பாரம்பரிய ஓவியங்கள்",
+  "catBamboo": "மூங்கில் மற்றும் பிரம்பு பொருட்கள்",
+  "catHomeDecor": "வீட்டு அலங்காரம்",
+  "catOther": "மற்றவை"
 }

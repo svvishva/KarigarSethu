@@ -184,4 +184,43 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get errorGenerating => 'లోపం:';
+
+  @override
+  String get catHandloomSarees => 'చేనేత చీరలు';
+
+  @override
+  String get catEthnicWear => 'సాంప్రదాయ దుస్తులు';
+
+  @override
+  String get catHandwovenTextiles => 'చేనేత వస్త్రాలు';
+
+  @override
+  String get catWoodenHandicrafts => 'చెక్క హస్తకళలు';
+
+  @override
+  String get catBrassMetalware => 'ఇత్తడి & కంచు వస్తువులు';
+
+  @override
+  String get catTerracotta => 'టెర్రకోట & కుమ్మరి పని';
+
+  @override
+  String get catLeatherCrafts => 'తోలు వస్తువులు';
+
+  @override
+  String get catFootwear => 'పాదరక్షలు';
+
+  @override
+  String get catJewelry => 'చేతితో చేసిన ఆభరణాలు';
+
+  @override
+  String get catPaintings => 'సాంప్రదాయ చిత్రలేఖనాలు';
+
+  @override
+  String get catBamboo => 'వెదురు & పేము ఉత్పత్తులు';
+
+  @override
+  String get catHomeDecor => 'గృహాలంకరణ';
+
+  @override
+  String get catOther => 'ఇతర';
 }

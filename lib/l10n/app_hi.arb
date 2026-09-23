@@ -56,5 +56,18 @@
   "waitingForTranscription": "प्रतियां बनने की प्रतीक्षा में...",
   "transcribingAudio": "ऑडियो ट्रांसक्राइब हो रहा है...",
   "failedToCalculatePrice": "AI मूल्य की गणना विफल। कृपया फिर से प्रयास करें या अपना इंटरनेट जांचें।",
-  "errorGenerating": "त्रुटि उत्पन्न हुई:"
+  "errorGenerating": "त्रुटि उत्पन्न हुई:",
+  "catHandloomSarees": "हथकरघा साड़ियां",
+  "catEthnicWear": "पारंपरिक परिधान",
+  "catHandwovenTextiles": "हाथ से बुने वस्त्र",
+  "catWoodenHandicrafts": "लकड़ी का हस्तशिल्प",
+  "catBrassMetalware": "पीतल और कांस्य धातु",
+  "catTerracotta": "टेराकोटा और मिट्टी के बर्तन",
+  "catLeatherCrafts": "चमड़े का हस्तशिल्प",
+  "catFootwear": "जूते और चप्पल",
+  "catJewelry": "हस्तनिर्मित आभूषण",
+  "catPaintings": "पारंपरिक पेंटिंग",
+  "catBamboo": "बांस और बेंत के उत्पाद",
+  "catHomeDecor": "गृह सज्जा",
+  "catOther": "अन्य"
 }

@@ -56,5 +56,18 @@
   "waitingForTranscription": "प्रतिक्षेत आहे...",
   "transcribingAudio": "ऑडिओ ट्रान्सक्राइब होत आहे...",
   "failedToCalculatePrice": "AI किंमत मोजण्यात अयशस्वी. कृपया इंटरनेट तपासा.",
-  "errorGenerating": "त्रुटी:"
+  "errorGenerating": "त्रुटी:",
+  "catHandloomSarees": "हातमाग साड्या",
+  "catEthnicWear": "पारंपारिक कपडे",
+  "catHandwovenTextiles": "हातमागाचे कापड",
+  "catWoodenHandicrafts": "लाकडी हस्तकला",
+  "catBrassMetalware": "पितळ आणि कांस्य वस्तू",
+  "catTerracotta": "टेराकोटा आणि मातीची भांडी",
+  "catLeatherCrafts": "चामड्याची हस्तकला",
+  "catFootwear": "पादत्राणे",
+  "catJewelry": "हस्तनिर्मित दागिने",
+  "catPaintings": "पारंपारिक चित्रे",
+  "catBamboo": "बांबू आणि वेताची उत्पादने",
+  "catHomeDecor": "घराची सजावट",
+  "catOther": "इतर"
 }

@@ -184,4 +184,43 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get errorGenerating => 'त्रुटि उत्पन्न हुई:';
+
+  @override
+  String get catHandloomSarees => 'हथकरघा साड़ियां';
+
+  @override
+  String get catEthnicWear => 'पारंपरिक परिधान';
+
+  @override
+  String get catHandwovenTextiles => 'हाथ से बुने वस्त्र';
+
+  @override
+  String get catWoodenHandicrafts => 'लकड़ी का हस्तशिल्प';
+
+  @override
+  String get catBrassMetalware => 'पीतल और कांस्य धातु';
+
+  @override
+  String get catTerracotta => 'टेराकोटा और मिट्टी के बर्तन';
+
+  @override
+  String get catLeatherCrafts => 'चमड़े का हस्तशिल्प';
+
+  @override
+  String get catFootwear => 'जूते और चप्पल';
+
+  @override
+  String get catJewelry => 'हस्तनिर्मित आभूषण';
+
+  @override
+  String get catPaintings => 'पारंपरिक पेंटिंग';
+
+  @override
+  String get catBamboo => 'बांस और बेंत के उत्पाद';
+
+  @override
+  String get catHomeDecor => 'गृह सज्जा';
+
+  @override
+  String get catOther => 'अन्य';
 }

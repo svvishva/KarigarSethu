@@ -56,5 +56,18 @@
   "waitingForTranscription": "ట్రాన్స్క్రిప్షన్ కోసం వేచి ఉంది...",
   "transcribingAudio": "ఆడియో ట్రాన్స్క్రైబ్ అవుతోంది...",
   "failedToCalculatePrice": "AI ధరను లెక్కించడంలో విఫలమైంది. దయచేసి ఇంటర్నెట్ కనెక్షన్ తనిఖీ చేయండి.",
-  "errorGenerating": "లోపం:"
+  "errorGenerating": "లోపం:",
+  "catHandloomSarees": "చేనేత చీరలు",
+  "catEthnicWear": "సాంప్రదాయ దుస్తులు",
+  "catHandwovenTextiles": "చేనేత వస్త్రాలు",
+  "catWoodenHandicrafts": "చెక్క హస్తకళలు",
+  "catBrassMetalware": "ఇత్తడి & కంచు వస్తువులు",
+  "catTerracotta": "టెర్రకోట & కుమ్మరి పని",
+  "catLeatherCrafts": "తోలు వస్తువులు",
+  "catFootwear": "పాదరక్షలు",
+  "catJewelry": "చేతితో చేసిన ఆభరణాలు",
+  "catPaintings": "సాంప్రదాయ చిత్రలేఖనాలు",
+  "catBamboo": "వెదురు & పేము ఉత్పత్తులు",
+  "catHomeDecor": "గృహాలంకరణ",
+  "catOther": "ఇతర"
 }

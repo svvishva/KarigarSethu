@@ -185,4 +185,43 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get errorGenerating => 'பிழை:';
+
+  @override
+  String get catHandloomSarees => 'கைத்தறி புடவைகள்';
+
+  @override
+  String get catEthnicWear => 'பாரம்பரிய உடைகள்';
+
+  @override
+  String get catHandwovenTextiles => 'கைத்தறி துணிகள்';
+
+  @override
+  String get catWoodenHandicrafts => 'மர கைவினைப்பொருட்கள்';
+
+  @override
+  String get catBrassMetalware => 'பித்தளை மற்றும் வெண்கல பொருட்கள்';
+
+  @override
+  String get catTerracotta => 'சுடுமண் மற்றும் மட்பாண்டங்கள்';
+
+  @override
+  String get catLeatherCrafts => 'தோல் கைவினைப்பொருட்கள்';
+
+  @override
+  String get catFootwear => 'காலணிகள்';
+
+  @override
+  String get catJewelry => 'கையால் செய்யப்பட்ட நகைகள்';
+
+  @override
+  String get catPaintings => 'பாரம்பரிய ஓவியங்கள்';
+
+  @override
+  String get catBamboo => 'மூங்கில் மற்றும் பிரம்பு பொருட்கள்';
+
+  @override
+  String get catHomeDecor => 'வீட்டு அலங்காரம்';
+
+  @override
+  String get catOther => 'மற்றவை';
 }

@@ -453,6 +453,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Error generating:'**
   String get errorGenerating;
+
+  /// No description provided for @catHandloomSarees.
+  ///
+  /// In en, this message translates to:
+  /// **'Handloom Sarees'**
+  String get catHandloomSarees;
+
+  /// No description provided for @catEthnicWear.
+  ///
+  /// In en, this message translates to:
+  /// **'Ethnic Wear & Dresses'**
+  String get catEthnicWear;
+
+  /// No description provided for @catHandwovenTextiles.
+  ///
+  /// In en, this message translates to:
+  /// **'Handwoven Textiles'**
+  String get catHandwovenTextiles;
+
+  /// No description provided for @catWoodenHandicrafts.
+  ///
+  /// In en, this message translates to:
+  /// **'Wooden Handicrafts'**
+  String get catWoodenHandicrafts;
+
+  /// No description provided for @catBrassMetalware.
+  ///
+  /// In en, this message translates to:
+  /// **'Brass & Bronze Metalware'**
+  String get catBrassMetalware;
+
+  /// No description provided for @catTerracotta.
+  ///
+  /// In en, this message translates to:
+  /// **'Terracotta & Pottery'**
+  String get catTerracotta;
+
+  /// No description provided for @catLeatherCrafts.
+  ///
+  /// In en, this message translates to:
+  /// **'Leather Crafts'**
+  String get catLeatherCrafts;
+
+  /// No description provided for @catFootwear.
+  ///
+  /// In en, this message translates to:
+  /// **'Footwear'**
+  String get catFootwear;
+
+  /// No description provided for @catJewelry.
+  ///
+  /// In en, this message translates to:
+  /// **'Handmade Jewelry'**
+  String get catJewelry;
+
+  /// No description provided for @catPaintings.
+  ///
+  /// In en, this message translates to:
+  /// **'Traditional Paintings'**
+  String get catPaintings;
+
+  /// No description provided for @catBamboo.
+  ///
+  /// In en, this message translates to:
+  /// **'Bamboo & Cane Products'**
+  String get catBamboo;
+
+  /// No description provided for @catHomeDecor.
+  ///
+  /// In en, this message translates to:
+  /// **'Home Decor'**
+  String get catHomeDecor;
+
+  /// No description provided for @catOther.
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get catOther;
 }
 
 class _AppLocalizationsDelegate

@@ -56,5 +56,18 @@
   "waitingForTranscription": "ട്രാൻസ്ക്രിപ്ഷനായി കാത്തിരിക്കുന്നു...",
   "transcribingAudio": "ഓഡിയോ ട്രാൻസ്ക്രൈബ് ചെയ്യുന്നു...",
   "failedToCalculatePrice": "AI വില കണക്കാക്കുന്നതിൽ പരാജയപ്പെട്ടു. നിങ്ങളുടെ ഇന്റർനെറ്റ് പരിശോധിക്കുക.",
-  "errorGenerating": "പിശക്:"
+  "errorGenerating": "പിശക്:",
+  "catHandloomSarees": "കൈത്തറി സാരികൾ",
+  "catEthnicWear": "പരമ്പരാഗത വസ്ത്രങ്ങൾ",
+  "catHandwovenTextiles": "കൈത്തറി തുണിത്തരങ്ങൾ",
+  "catWoodenHandicrafts": "മരപ്പണികൾ",
+  "catBrassMetalware": "ഓട്, പിച്ചള പാത്രങ്ങൾ",
+  "catTerracotta": "മൺപാത്രങ്ങൾ",
+  "catLeatherCrafts": "തുകൽ കരകൗശലവസ്തുക്കൾ",
+  "catFootwear": "ചെരിപ്പുകൾ",
+  "catJewelry": "കൈകൊണ്ട് നിർമ്മിച്ച ആഭരണങ്ങൾ",
+  "catPaintings": "പരമ്പരാഗത ചിത്രങ്ങൾ",
+  "catBamboo": "മുള, ചൂരൽ ഉൽപ്പന്നങ്ങൾ",
+  "catHomeDecor": "ഗൃഹാലങ്കാരം",
+  "catOther": "മറ്റുള്ളവ"
 }

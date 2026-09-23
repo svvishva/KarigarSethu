@@ -184,4 +184,43 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get errorGenerating => 'Error generating:';
+
+  @override
+  String get catHandloomSarees => 'Handloom Sarees';
+
+  @override
+  String get catEthnicWear => 'Ethnic Wear & Dresses';
+
+  @override
+  String get catHandwovenTextiles => 'Handwoven Textiles';
+
+  @override
+  String get catWoodenHandicrafts => 'Wooden Handicrafts';
+
+  @override
+  String get catBrassMetalware => 'Brass & Bronze Metalware';
+
+  @override
+  String get catTerracotta => 'Terracotta & Pottery';
+
+  @override
+  String get catLeatherCrafts => 'Leather Crafts';
+
+  @override
+  String get catFootwear => 'Footwear';
+
+  @override
+  String get catJewelry => 'Handmade Jewelry';
+
+  @override
+  String get catPaintings => 'Traditional Paintings';
+
+  @override
+  String get catBamboo => 'Bamboo & Cane Products';
+
+  @override
+  String get catHomeDecor => 'Home Decor';
+
+  @override
+  String get catOther => 'Other';
 }
