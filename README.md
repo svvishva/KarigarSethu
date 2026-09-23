@@ -1,418 +1,530 @@
 <div align="center">
-  <img src="assets/logo_padded.jpeg" alt="KarigarSethu Logo" width="120" />
 
-  <h1>KarigarSethu</h1>
+<img src="assets/logo_padded.jpeg" width="130" alt="KarigarSethu Logo"/>
 
-  <p><strong>AI Virtual Business Manager for Artisans</strong></p>
-  <p><em>Smart India Hackathon 2026 Submission — SIH26090</em></p>
+# 🪡 KarigarSethu
+
+### AI Virtual Business Manager for Artisans
+
+**From Craft → Catalog → Pricing → Market**
+
+<p>
+  <strong>Smart India Hackathon 2026</strong>
+  &nbsp;•&nbsp;
+  <strong>PS ID: SIH26090</strong>
+  &nbsp;•&nbsp;
+  <strong>Team INNO CREW</strong>
+</p>
+
+<p>
+  <a href="https://github.com/svvishva/KarigarSethu">
+    <img src="https://img.shields.io/badge/GitHub-KarigarSethu-181717?style=for-the-badge&logo=github" alt="GitHub"/>
+  </a>
+  <img src="https://img.shields.io/badge/Flutter-Dart-02569B?style=for-the-badge&logo=flutter" alt="Flutter"/>
+  <img src="https://img.shields.io/badge/FastAPI-Python-009688?style=for-the-badge&logo=fastapi" alt="FastAPI"/>
+  <img src="https://img.shields.io/badge/Groq-AI-000000?style=for-the-badge" alt="Groq"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-Supabase-3ECF8E?style=for-the-badge&logo=postgresql" alt="Supabase"/>
+</p>
+
 </div>
 
 ---
 
-## 🎯 The Problem
+# 🌟 What is KarigarSethu?
 
-Marginalized artisans and micro-entrepreneurs often face barriers when entering digital marketplaces.
+**KarigarSethu** is an AI-powered mobile application designed to help marginalized artisans move from traditional product selling to digital commerce with minimal technical effort.
 
-The major challenges include:
+Instead of requiring artisans to manually create product listings, write descriptions, translate content and determine prices, KarigarSethu combines **a product photograph + a regional-language voice description** to assist in creating a marketplace-ready product listing.
 
-- Language barriers
-- Limited digital cataloging skills
-- Difficulty creating professional product photographs
-- Difficulty writing e-commerce product descriptions
-- Uncertainty about competitive pricing
-- Limited access to B2B and larger digital markets
-
-As a result, many skilled artisans remain dependent on physical exhibitions, local markets and intermediaries.
-
----
-
-## 💡 Our Solution — KarigarSethu
-
-**KarigarSethu** is an AI-powered, mobile-first **Virtual Business Manager for Artisans**.
-
-It helps artisans transform a simple **product photo + voice description** into a professional, market-ready product listing.
-
-### Core Pipeline
+### The idea is simple:
 
 ```text
-Product Photo + Voice Description
-              ↓
-        AI Processing
-              ↓
-   ┌──────────┼───────────┐
-   ↓          ↓           ↓
-Image       Speech      Language
-AI          AI          AI
-   ↓          ↓           ↓
-ML Kit     Whisper      Groq LLM
-              ↓
-      Product Understanding
-              ↓
-   English + Hindi Catalog
-              ↓
-       AI Price Assistance
-              ↓
-       Artisan Review/Edit
-              ↓
-      Publish to Marketplace
-📸 2. AI Image Studio
+📸 Take a Product Photo
+          +
+🎙️ Describe the Product in Your Language
+          ↓
+       🤖 AI Processing
+          ↓
+📝 Professional Product Catalog
+          +
+💰 AI-Assisted Pricing
+          ↓
+✏️ Artisan Review & Approval
+          ↓
+🌐 Marketplace-Ready Listing
 
-Artisans do not need professional photography equipment.
+One product. One photo. One voice note. One complete listing.
 
-The application uses Google ML Kit Subject Segmentation and on-device image processing to help prepare product photographs for digital marketplaces.
+📱 Product Preview
+<div align="center">
+🔐 Login & Language Selection
+<table> <tr> <td align="center"> <img src="assets/login.jpeg" width="280"/> <br/> <strong>Login</strong> </td> <td align="center"> <img src="assets/select_language.jpeg" width="280"/> <br/> <strong>Language Selection</strong> </td> </tr> </table>
+🏠 Dashboard & Product Creation
+<table> <tr> <td align="center"> <img src="assets/dashboard.jpeg" width="280"/> <br/> <strong>Dashboard</strong> </td> <td align="center"> <img src="assets/add_product.jpeg" width="280"/> <br/> <strong>Add Product</strong> </td> </tr> </table>
+🎙️ AI Catalog Generation
+<table> <tr> <td align="center"> <img src="assets/audio_to_description.jpeg" width="280"/> <br/> <strong>Voice → AI Description</strong> </td> <td align="center"> <img src="assets/add_features.jpeg" width="280"/> <br/> <strong>Product Attributes</strong> </td> </tr> </table>
+💰 Pricing Assistance
+<table> <tr> <td align="center"> <img src="assets/base_price.jpeg" width="280"/> <br/> <strong>Pricing Assistant</strong> </td> </tr> </table> </div>
+🎯 The Problem
 
-Capabilities include:
+Many artisans create high-quality traditional products but face difficulties when trying to sell them through digital marketplaces.
 
+Challenge	KarigarSethu Approach
+📸 Product photography	AI-assisted image preparation
+🗣️ Language barriers	Regional-language voice input
+📝 Writing product descriptions	AI-generated catalog content
+🌐 Translation	Multilingual AI processing
+💰 Pricing decisions	AI-assisted price recommendation
+💻 Digital complexity	Simple mobile-first workflow
+🏪 Market access	Marketplace-ready architecture
+
+KarigarSethu focuses on reducing the amount of technical work required from the artisan.
+
+✨ Core Capabilities
+📸 01 — AI Image Studio
+
+The AI Image Studio helps artisans prepare product photographs for digital commerce.
+
+Features
+Product subject segmentation
 Background removal
-Product isolation
-Clean product presentation
-Image editing
-E-commerce-ready formatting
+Cleaner product presentation
+Image enhancement workflow
+E-commerce-oriented formatting
+Edge AI processing using Google ML Kit
+Processing Flow
+Product Photograph
+        ↓
+Google ML Kit
+Subject Segmentation
+        ↓
+Product Isolation
+        ↓
+Image Preparation
+        ↓
+E-commerce Ready Image
+🎙️ 02 — Multilingual Auto-Cataloger
 
-On-device processing helps reduce unnecessary server-side image processing and can provide a responsive user experience.
+Artisans can describe their products naturally using a voice recording in a supported regional language.
 
-🧠 3. AI-Powered Product Intelligence
+The system converts the voice into text and uses an LLM to understand the product information.
 
-The Groq-powered LLM processes the artisan's product description and extracts useful product information such as:
-
+AI Pipeline
+🎙️ Artisan Voice
+       ↓
+Groq Whisper API
+       ↓
+Regional-Language Transcript
+       ↓
+Groq LLM / Qwen
+       ↓
+Product Understanding
+       ↓
+Attribute Extraction
+       ↓
+Translation & Catalog Generation
+       ↓
+🇬🇧 English + 🇮🇳 Hindi Listing
+Generated Information
 Product name
-Category
+Product category
 Material
 Colour
 Size
-Product characteristics
-Care information
-SEO keywords
-Professional product description
+Design details
+Product description
+Search-friendly keywords
+Marketplace-oriented content
+Example
+Artisan Voice
+     ↓
+"இந்த புடவை கைத்தறியில்..."
+     ↓
+Groq Whisper
+     ↓
+Text Transcription
+     ↓
+Groq LLM
+     ↓
+Product Understanding
+     ↓
+Professional Product Listing
+🧠 03 — AI Product Intelligence
 
-The system is designed to turn informal artisan descriptions into structured marketplace-ready information.
+KarigarSethu extracts useful product information from the artisan's description.
 
-💰 4. Dynamic AI Pricing Assistant
+The system can help identify structured attributes such as:
 
-KarigarSethu assists artisans in determining a suitable selling price using product and market-related information.
+Product
+├── Category
+├── Material
+├── Colour
+├── Size
+├── Craft Type
+├── Design
+├── Usage
+└── Description
 
-The pricing workflow can consider:
+This reduces the amount of manual data entry required from artisans.
 
+💰 04 — Dynamic Pricing Assistant
+
+KarigarSethu provides an AI-assisted price recommendation using product and market-related information.
+
+The pricing workflow can consider inputs such as:
+
+Production cost
 Raw material cost
 Labour cost
 Packaging cost
 Product category
-Market price information
-Demand-related inputs
+Market-related information
+Demand-related features
+Pricing Flow
+Product Information
+        +
+Production Cost
+        +
+Market Features
+        ↓
+   Groq LLM Reasoning
+        ↓
+Suggested Price Range
+        ↓
+Artisan Review
+        ↓
+Final Selling Price
 
-The AI produces a price recommendation that the artisan can review, edit or approve before publishing.
+The suggested price is an AI recommendation.
+The artisan remains in control of the final selling price.
 
-The final selling price always remains under the artisan's control.
+✏️ 05 — Human-in-the-Loop
 
-👤 5. Human-in-the-Loop
+KarigarSethu is designed around artisan approval, rather than automatically publishing AI-generated information.
 
-KarigarSethu does not blindly publish AI-generated content.
+AI Generates
+     ↓
+Artisan Reviews
+     ↓
+Artisan Edits
+     ↓
+Artisan Approves
+     ↓
+Final Listing
 
-The artisan can review and modify:
+This allows the artisan to correct:
 
-Product image
-Product name
-Description
-Product attributes
-Suggested price
+Product names
+Descriptions
+Attributes
+Translations
+Prices
+Product details
+🌐 06 — Marketplace-Ready Architecture
 
-Only after approval is the product ready to be published.
+The backend is designed using REST APIs so that future marketplace integrations can be added without redesigning the complete application.
 
-🌐 6. GeM-Ready Architecture
-
-The backend follows a REST API-based architecture designed to support future integrations with:
+Potential future integrations include:
 
 B2B marketplaces
-Government procurement platforms
-Government e-Marketplace (GeM)
+Government marketplace platforms
+GeM-ready integration
+Digital commerce platforms
 
-Note: Live GeM integration is part of the future scope and requires the appropriate official APIs, access and authorization.
+Current prototype: marketplace-ready architecture
+Future scope: direct marketplace/API integrations
 
-🏗️ Technical Architecture
-                    ┌──────────────────────┐
-                    │   Flutter Mobile App │
-                    └──────────┬───────────┘
-                               │
-                         HTTPS / REST
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │   Python + FastAPI   │
-                    │    Backend Layer     │
-                    └──────────┬───────────┘
-                               │
-          ┌────────────────────┼─────────────────────┐
-          │                    │                     │
-          ▼                    ▼                     ▼
- ┌────────────────┐   ┌─────────────────┐   ┌────────────────┐
- │ Google ML Kit  │   │    Groq API     │   │ Pricing Engine │
- │ Subject        │   │                 │   │                │
- │ Segmentation   │   │ ┌─────────────┐ │   │ AI-based       │
- │                │   │ │   Whisper   │ │   │ price          │
- │ Image          │   │ │ Speech→Text │ │   │ recommendation │
- │ Processing     │   │ └─────────────┘ │   │                │
- └────────────────┘   │ ┌─────────────┐ │   └────────────────┘
-                      │ │  Groq LLM   │ │
-                      │ │ Catalog/NLP  │ │
-                      │ └─────────────┘ │
-                      └─────────────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │ PostgreSQL /         │
-                    │ Supabase             │
-                    │                      │
-                    │ • Database           │
-                    │ • Authentication     │
-                    │ • Storage            │
-                    │ • Realtime           │
-                    └──────────────────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │ Firebase Cloud       │
-                    │ Messaging            │
-                    └──────────────────────┘
-🛠️ Tech Stack
-Frontend
-Flutter & Dart — Cross-platform mobile application
-Stateful UI & ValueNotifier — Application state management
-flutter_localizations / ARB files — Multilingual application interface
-Backend
-Python
-FastAPI — REST API and backend business logic
-Docker — Containerization and deployment
-Artificial Intelligence
-Groq Whisper API — Regional-language speech-to-text
-Groq API / LLM — Language understanding, translation, catalog generation and product attribute extraction
-Google ML Kit Subject Segmentation — On-device product/background segmentation
-AI Pricing Engine — Product and market information based price recommendation
-Database & Cloud Services
-PostgreSQL / Supabase — Database
-Supabase Authentication — User authentication
-Supabase Storage — Product image/file storage
-Firebase Cloud Messaging — Push notifications
-Architecture
-REST APIs
-HTTPS
-GeM-ready architecture
-Cloud-deployable Docker containers
-📁 Project Structure
+🔄 End-to-End Product Journey
+┌──────────────────────────────┐
+│       👤 ARTISAN             │
+└──────────────┬───────────────┘
+               │
+               ▼
+       📸 Product Photo
+               │
+               ▼
+      🎙️ Voice Description
+               │
+               ▼
+┌──────────────────────────────┐
+│        🤖 AI LAYER            │
+│                              │
+│  Google ML Kit               │
+│  Groq Whisper API            │
+│  Groq LLM / Qwen             │
+└──────────────┬───────────────┘
+               │
+               ▼
+      📝 Product Catalog
+               │
+               ▼
+      💰 Price Assistance
+               │
+               ▼
+       ✏️ Artisan Review
+               │
+               ▼
+        ✅ Approval
+               │
+               ▼
+       🌐 Digital Listing
+🏗️ System Architecture
+<div align="center"> <img src="assets/architecture-diagram-updated.png" width="900" alt="KarigarSethu System Architecture"/> </div>
+Architecture Overview
+Flutter Mobile App
+        │
+        ▼
+   FastAPI Backend
+        │
+ ┌──────┼──────────────┐
+ │      │              │
+ ▼      ▼              ▼
+ML Kit Groq          Groq
+Image   Whisper       LLM
+ │      │              │
+ │      │              ├── Catalog Generation
+ │      │              ├── Translation
+ │      │              ├── Attribute Extraction
+ │      │              └── Pricing Reasoning
+ │      │
+ └──────┴──────────────┐
+                       ▼
+               PostgreSQL /
+                 Supabase
+                       │
+                       ▼
+                Firebase FCM
+🛠️ Technology Stack
+Layer	Technology
+📱 Mobile Application	Flutter / Dart
+⚡ Backend	Python / FastAPI
+📸 Computer Vision	Google ML Kit — Subject Segmentation
+🎙️ Speech-to-Text	Groq Whisper API
+🧠 Language AI	Groq API / Qwen LLM
+🗄️ Database	PostgreSQL / Supabase
+📦 Storage	Supabase
+🔔 Notifications	Firebase Cloud Messaging
+🐳 Deployment	Docker
+🌐 API Architecture	REST / HTTPS
+🏪 Marketplace Architecture	GeM-ready REST API design
+🌍 Localization	Flutter Localization / ARB
+🔧 State Management	Stateful UI / ValueNotifier
+🧩 Technology Roles
+Flutter
+
+Used to build the cross-platform mobile application and user interface.
+
+Python + FastAPI
+
+Provides the backend API layer connecting the mobile application with AI services and the database.
+
+Google ML Kit
+
+Used for on-device subject segmentation for product image processing.
+
+Groq Whisper API
+
+Used for speech-to-text processing from artisan voice recordings.
+
+Groq API / Qwen
+
+Used for:
+
+Product understanding
+Translation
+Attribute extraction
+Catalog generation
+SEO-oriented descriptions
+Pricing reasoning
+PostgreSQL / Supabase
+
+Used for structured product and application data.
+
+Firebase Cloud Messaging
+
+Used for application notifications.
+
+Docker
+
+Used to package the backend for consistent deployment.
+
+📂 Project Structure
 KarigarSethu/
 │
 ├── assets/
 │   ├── logo_padded.jpeg
-│   ├── architecture-diagram-updated.png
 │   ├── login.jpeg
 │   ├── select_language.jpeg
 │   ├── dashboard.jpeg
 │   ├── add_product.jpeg
 │   ├── audio_to_description.jpeg
 │   ├── add_features.jpeg
-│   └── base_price.jpeg
+│   ├── base_price.jpeg
+│   └── architecture-diagram-updated.png
 │
-├── lib/
-│   ├── core/
-│   │   ├── constants/
-│   │   ├── theme/
-│   │   └── locale/
-│   │
-│   ├── l10n/
-│   │   └── *.arb
-│   │
-│   ├── models/
-│   │
-│   ├── screens/
-│   │   ├── dashboard/
-│   │   ├── add_product/
-│   │   └── language_selection/
-│   │
-│   ├── services/
-│   │   ├── groq/
-│   │   ├── speech/
-│   │   └── ...
-│   │
-│   └── widgets/
+├── frontend/
+│   └── Flutter Application
 │
-├── android/
-├── ios/
-├── web/
-├── pubspec.yaml
-└── README.md
-📸 Prototype
+├── backend/
+│   └── FastAPI Application
+│
+├── README.md
+└── LICENSE
 
-More than 40% of the prototype has been completed, covering the core application workflow.
+The exact directory structure may evolve as development continues.
 
-Prototype Screens
-<p align="center"> <img src="assets/login.jpeg" width="22%" /> <img src="assets/select_language.jpeg" width="22%" /> <img src="assets/dashboard.jpeg" width="22%" /> <img src="assets/add_product.jpeg" width="22%" /> </p> <p align="center"> <img src="assets/audio_to_description.jpeg" width="22%" /> <img src="assets/add_features.jpeg" width="22%" /> <img src="assets/base_price.jpeg" width="22%" /> </p>
-🔄 End-to-End Workflow
-1. Artisan Login
-        ↓
-2. Select Language
-        ↓
-3. Add Product
-        ↓
-4. Capture / Upload Product Photo
-        ↓
-5. AI Image Processing
-        ↓
-6. Record Product Description
-        ↓
-7. Groq Whisper Speech-to-Text
-        ↓
-8. Groq LLM Understanding & Translation
-        ↓
-9. English + Hindi Catalog Generation
-        ↓
-10. Product Attribute Extraction
-        ↓
-11. AI Price Recommendation
-        ↓
-12. Artisan Reviews / Edits
-        ↓
-13. Approves Product
-        ↓
-14. Publish to Marketplace
-🚀 Local Setup
-Prerequisites
-Flutter SDK
-Android Studio / Xcode
-Android Emulator or physical Android device
-iOS device/simulator for iOS development
-Git
-1. Clone the Repository
-git clone https://github.com/svvishva/KarigarSethu.git
-cd KarigarSethu
-2. Install Dependencies
-flutter pub get
-3. Configure Environment Variables
-
-Create the required environment configuration according to the project's implementation.
-
-For Groq integration:
-
-GROQ_API_KEY=your_groq_api_key
-Security
-
-Never commit real API keys to GitHub.
-
-Use:
-
-.env
-
-and keep it excluded through .gitignore.
-
-4. Run the Application
-flutter run
-
-For a connected Android device:
-
-flutter devices
-flutter run
-🔐 Security Considerations
-
-For prototype deployment:
-
-API keys should be stored in environment variables.
-Do not commit secrets to GitHub.
-Use HTTPS for API communication.
-Authenticate backend requests.
-Apply access controls to stored artisan data.
-Minimize personal information sent to external AI APIs.
-Keep AI providers behind the backend layer for future provider replacement.
-
-For production government deployment, the infrastructure and AI services can be migrated to deployment environments approved by the concerned government organization and its security/data-residency requirements.
-
-☁️ Planned Production Architecture
-
-The prototype is designed to evolve into a scalable cloud architecture:
-
-Flutter
-   ↓
-HTTPS
-   ↓
-API Gateway / Reverse Proxy
-   ↓
-FastAPI Backend
-   ↓
-┌────────────────────────────────┐
-│ AI Services                    │
-│                                │
-│ Groq Whisper / LLM             │
-│ Image Processing               │
-│ Pricing Engine                 │
-└────────────────────────────────┘
-   ↓
-PostgreSQL / Supabase
-   ↓
-B2B / Marketplace Integrations
-   ↓
-Future GeM Integration
-
-The AI provider layer can be replaced or migrated according to future deployment, security and data-residency requirements.
-
-🏛️ Smart India Hackathon
-
-Problem Statement: SIH26090
-
-Problem Statement:
-AI-Driven Market Linkage and Smart Cataloging Mobile Application for Marginalized Artisans
-
-Theme: Heritage & Culture
-
-Category: Software
-
-Team: INNO CREW
-
-Team ID: 25T
-
-📚 Research & References
-Groq API
-
-Used for speech-to-text and LLM-powered multilingual catalog generation.
-
-https://console.groq.com/docs/overview
-
-Google ML Kit
-
-Used for on-device machine-learning capabilities including subject segmentation.
-
-https://developers.google.com/ml-kit
-
-Supabase
-
-https://supabase.com/
-
-FastAPI
-
-https://fastapi.tiangolo.com/
-
-Flutter
-
-https://flutter.dev/
-
-PM Vishwakarma
-
-https://www.pmvishwakarma.gov.in/
-
-IndiaHandmade
-
-https://www.indiahandmade.com/
-
-🔗 Project Links
-GitHub
-
-https://github.com/svvishva/KarigarSethu
-
-Demo / Video
-
-Add your deployment or demonstration link here.
-
+🚀 Prototype Status
 <div align="center">
+~40% Prototype Completed
+</div>
+✅ Current Prototype
+Flutter mobile interface
+Authentication flow
+Language selection
+Dashboard
+Product creation workflow
+Voice-based product description
+Groq Whisper integration
+AI catalog generation workflow
+Product attribute workflow
+Pricing workflow
+Core application UI
+Backend architecture
+🔄 In Development
+Complete backend integration
+End-to-end AI pipeline
+Production-grade image processing
+Full database integration
+Notification integration
+Marketplace integration
+Cloud deployment
+End-to-end testing
+🔐 Security & Data Handling
+
+The application is being designed with security and privacy considerations from the beginning.
+
+Current principles
+API keys are stored as environment variables.
+Sensitive credentials are not committed to GitHub.
+Backend services act as the gateway to external AI APIs.
+Authentication is handled through the application backend/authentication layer.
+Database access is separated from the mobile client.
+AI-generated information is reviewed by the artisan before final use.
+Prototype Data Policy
+
+The SIH prototype should use demo or synthetic data during demonstrations and testing.
+
+Sensitive personal information such as:
+
+Aadhaar information
+Bank account details
+Government confidential information
+Private customer records
+
+should not be used in the prototype demonstration.
+
+📈 Future Roadmap
+Phase 1 — Prototype
+ Mobile application UI
+ Product creation workflow
+ Voice input workflow
+ AI catalog workflow
+ Pricing workflow
+ Complete backend integration
+Phase 2 — Production
+ Production cloud deployment
+ Complete image enhancement pipeline
+ Notification system
+ Analytics dashboard
+ Robust authentication
+ Performance optimization
+Phase 3 — Market Connectivity
+ B2B marketplace APIs
+ GeM integration where applicable
+ Artisan marketplace publishing
+ Buyer discovery
+ Order management
+ Sales analytics
+🌍 Expected Impact
+
+KarigarSethu aims to reduce the digital barriers faced by artisans by simplifying several activities that are normally required to create a digital product listing.
+
+Potential benefits
+Traditional Selling
+       ↓
+Limited Digital Presence
+       ↓
+Manual Catalog Creation
+       ↓
+Difficulty Reaching Buyers
+
+KarigarSethu aims to support:
+
+Artisan
+   ↓
+Simple Mobile Workflow
+   ↓
+AI-Assisted Catalog
+   ↓
+AI-Assisted Pricing
+   ↓
+Digital Marketplace Readiness
+   ↓
+Larger Potential Market Access
+Key impact areas
+📱 Digital accessibility
+📝 Reduced catalog creation effort
+🌐 Multilingual commerce support
+💰 Pricing assistance
+🏪 Market access
+🧵 Preservation and promotion of traditional crafts
+🏆 Smart India Hackathon 2026
+Category	Details
+Problem Statement	SIH26090
+Problem Title	AI-Driven Market Linkage and Smart Cataloging Mobile Application for Marginalized Artisans
+Theme	Heritage & Culture
+Category	Software
+Team	INNO CREW
+Team ID	25T
+Application	KarigarSethu
+🔗 Project Links
+💻 GitHub
+
+github.com/svvishva/KarigarSethu
+
+🎥 Demo Video
+
+Add your YouTube demonstration link here
+
+🚀 Live Prototype
+
+Add your deployed application/API link here
+
+👥 Team INNO CREW
+<div align="center">
+Building technology for traditional artisans.
+
+KarigarSethu
+
+AI Virtual Business Manager for Artisans
+
 🪡 From Craft to Commerce
 
-<strong>Built with ❤️ for the artisans of India.</strong>
+Built for artisans. Designed for digital commerce.
 
-KarigarSethu — AI Virtual Business Manager for Artisans
+</div>
+📚 References
+Smart India Hackathon 2026 — Problem Statement SIH26090
+Google ML Kit Documentation
+Groq API Documentation
+Supabase Documentation
+FastAPI Documentation
+Flutter Documentation
+Firebase Cloud Messaging Documentation
+<div align="center">
+
+⭐ If you find this project interesting, consider starring the repository.
+
+KarigarSethu • INNO CREW • SIH 2026
 
 </div> ```
