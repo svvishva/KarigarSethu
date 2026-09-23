@@ -10,6 +10,16 @@ KarigarSethu is a modern, feature-rich Flutter application designed to bridge th
 *   **Localization (i18n):** Fully localized supporting multiple languages (including Telugu) out of the box using Flutter's official localization system.
 *   **Beautiful UI:** Styled with `google_fonts`, custom typography, and responsive modern layouts.
 
+## 📸 Screenshots
+
+<p align="center">
+  <img src="assets/screenshots/add_product_desc.jpg" width="22%" />
+  <img src="assets/screenshots/select_language.jpg" width="22%" />
+  <img src="assets/screenshots/ai_pricing.jpg" width="22%" />
+  <img src="assets/screenshots/login.jpg" width="22%" />
+</p>
+
+
 ## 🚀 Getting Started
 
 ### Prerequisites
