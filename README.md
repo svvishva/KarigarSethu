@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  Smart India Hackathon 2026 · PS SIH26090 · Team INNO CREW (ID 25T)
+  Smart India Hackathon 2026 · PS SIH26090 · Team Sethu (ID 177907)
 </p>
 
 <p align="center">
@@ -164,10 +164,10 @@ flutter run
 ## Links
 
 - Repository: [github.com/svvishva/KarigarSethu](https://github.com/svvishva/KarigarSethu)
-- Demo video: <!-- TODO: add link -->
-- Live prototype: <!-- TODO: add link -->
+- Demo video: [youtube.com/shorts/rkIRY6c0-qM](https://youtube.com/shorts/rkIRY6c0-qM?feature=share)
+ <!-- TODO: add link -->
 
-## Team INNO CREW
+## Team Sethu
 
 <!-- TODO: add members, roles and GitHub handles -->
 
